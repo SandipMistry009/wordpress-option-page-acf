@@ -8,7 +8,6 @@ Author URI: https://sandipmistry.cm
 */
 
 /**
- * @see  https://since1979.dev/snippet-002-adding-option-pages-with-acf/
  * @uses acf https://www.advancedcustomfields.com/
  * @uses acf_add_options_page https://www.advancedcustomfields.com/resources/acf_add_options_page/
  * @uses acf_add_options_sub_page https://www.advancedcustomfields.com/resources/acf_add_options_sub_page/
