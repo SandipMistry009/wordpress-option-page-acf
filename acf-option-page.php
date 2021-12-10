@@ -13,6 +13,19 @@ Author URI: https://sandipmistry.cm
  * @uses acf_add_options_sub_page https://www.advancedcustomfields.com/resources/acf_add_options_sub_page/
  */
 
+if (!class_exists('ACF')) {
+    //  The ACF class doesn't exist, so you can probably redefine your functions here
+    add_action( 'admin_notices', 'my_acf_notice' );
+}
+
+function my_acf_notice() {
+  ?>
+  <div class="notice notice-error is-dismissible" >
+        <p><?php _e( 'ACF is not necessary for this plugin, but it will make your experience better, install it now!', 'my-text-domain' ); ?></p>
+    </div>
+  <?php
+}
+
 function add_acf_menu_pages()
 {
     acf_add_options_page(array(
